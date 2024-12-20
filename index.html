@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .flex1{
+            display: flex;
+            margin-left: 640px;
+        }
+        .flex2{
+            display: flex;
+        }
+        h1{
+            text-align: left;
+        }
+        h2{
+            text-align: center;
+        }
+        p{
+            text-align: center;
+        }
+        .head1{
+            text-align: center;
+            margin-left: 500px;
+        }
+        h3{
+            text-align: center;
+            color: white;
+        }
+        header {
+            background-color: rgb(142, 189, 250);
+            padding: 20px;
+            text-align: center;
+            height: 100px;
+        }
+
+        .grid-container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-content: center;
+            align-items: center;
+        }
+        @media (min-width: 1px) and (max-width: 390px){
+            .grid-container{
+                grid-template-columns: repeat(1, 1fr);
+            }       
+        }
+
+        @media (min-width: 390px) and (max-width: 844px){
+            .grid-container{
+                grid-template-columns: repeat(2, 1fr);
+            }       
+        }
+
+
+        .item1{
+            background-color: rgb(49, 56, 56);
+            width: 200px;
+            height: 200px;
+            margin: 3px;
+        }
+        .item2{
+            background-color: orange;
+            width: 200px;
+            height: 200px;
+            margin: 3px;
+        }
+        .item3{
+            background-color: rgb(49, 56, 56);
+            width: 200px;
+            height: 200px;
+            margin: 3px;
+            
+        }
+        .item4{
+            background-color: rgb(60, 250, 22);
+            width: 200px;
+            height: 200px;
+            margin: 3px;
+        }
+        .item5{
+            background-color: rgb(91, 91, 92);
+            width: 200px;
+            height: 200px;
+            margin: 3px;
+        }
+        .item6{
+            background-color: rgb(30, 122, 138);
+            width: 200px;
+            height: 200px;
+            margin: 3px;
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            margin-top: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>logo</h1>
+            <div class="head1">
+                <a>Home</a>
+                <a>About Company</a>
+            </div>
+
+    </header>
+    <h2>We'll help manage your business</h2>
+    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore<br>
+    eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,<br>
+    sunt in culpa</p>
+    <P>Images from Freepik</P>
+
+    <div class="grid-container">
+        <div class="flex-item item1"><h3>Consultations</h3></div>
+        <div class="flex-item item2"><h3>Strategy</h3></div>
+        <div class="flex-item item3"><h3>Investment</h3></div>
+        <div class="flex-item item4"><h3>Marketing</h3></div>
+        <div class="flex-item item5"><h3>Startups</h3></div>
+        <div class="flex-item item6"><h3>Anti-Crisis</h3></div>
+    </div>
+
+    <footer class="footer">
+        <p>Sample text. Click to select the text box. Click again or double<br>
+        click to start editing the text.</p>
+    </footer>
+</body>
+</html>
